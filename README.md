@@ -65,7 +65,7 @@ docker-compose up -d
 
 - Clone o repositório com __git clone__ executando o comando:
 ```
-git clone https://github.com/gilcleis/research-module.git
+git clone https://github.com/gilcleis/api_developer.git
 ```
 - Acesse o diretorio criado
 - Crie uma copia do arqruivo __.env.example__ nomeando para __.env__ 
