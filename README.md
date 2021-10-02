@@ -24,6 +24,39 @@ Projeto desenvolvido em PHP v7.3, Laravel v8.5 e Vue v2.6
 
 PHP v7.3, Laravel v8.5 e Vue v2.6, composer v2.0 e node v15.0
 
+### API endpoints
+```
+GET /developers
+Codes 200
+Retorna todos os desenvolvedores
+```
+```
+GET /developers?filtro=sexo:=:F&per_page=3&ordercolumn=id&order=desc
+Codes 200 / 404
+Retorna os desenvolvedores de acordo com o termo passado via querystring e
+paginação
+```
+```
+GET /developers/{id}
+Codes 200 / 404
+Retorna os dados de um desenvolvedor
+```
+```
+POST /developers
+Codes 201 / 400
+Adiciona um novo desenvolvedor
+```
+```
+PUT /developers/{id}
+Codes 200 / 400
+Atualiza os dados de um desenvolvedor
+```
+```
+DELETE /developers/{id}
+Codes 204 / 400
+Apaga o registro de um desenvolvedor
+```
+
 ### Instalação Docker
 ```
 docker-compose up -d
@@ -43,7 +76,7 @@ git clone https://github.com/gilcleis/research-module.git
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=research
+DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=
 ```
@@ -79,3 +112,7 @@ npm run dev
 php artisan serve
 ```
 
+### Testes
+```
+vendor/bin/phpunit
+```
