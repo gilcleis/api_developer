@@ -18,9 +18,3 @@ run npm run dev
 run composer install
 run php artisan key:generate
 
-#RUN composer install
-# RUN npm install
-# RUN npm run dev
-# RUN php artisan migrate:fresh --seed
-
-# CMD ["bash", "./laravue-entrypoint.sh"]
