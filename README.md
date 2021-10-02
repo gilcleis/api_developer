@@ -15,6 +15,7 @@ Para isso foram criado as telas:
 
 
 ![](./screen.png)
+![](./screen1.png)
 
 ## Inicio <a name = "getting_started"></a>
 
@@ -60,6 +61,10 @@ Apaga o registro de um desenvolvedor
 ### Instalação Docker
 ```
 docker-compose up -d
+```
+- Acessar o endereço
+```
+http://127.0.0.1:8080/
 ```
 ### Instalação Manual
 
