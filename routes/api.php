@@ -15,8 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware('api')->group(function () {
-    Route::resource('/questions', QuestionController::class);
-    Route::patch('/questions/statusUpdate/{question}', 'QuestionController@statusUpdate')->name('question.statusUpdate');
-    Route::resource('/dimensions', DimensionController::class);
     Route::resource('/developers', DeveloperController::class);
 });
