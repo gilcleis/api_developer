@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  aravel-app:
+  laravel-app:
     build: .
     working_dir: /usr/share/nginx
     ports:
@@ -10,7 +10,7 @@ services:
     #   - ./:/usr/share/nginx
     networks:
       - app-network
-      
+
   mysql-app:
     image: mysql:5.7.35
     ports:

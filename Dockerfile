@@ -17,6 +17,7 @@ run npm install
 run npm run dev
 run composer install
 run php artisan key:generate
+
 #RUN composer install
 # RUN npm install
 # RUN npm run dev
